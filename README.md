@@ -1,2 +1,2 @@
-# Simple-Typescript-ReactJS-Webpack
-This project is a clean starting point for using typescript, react and webpack. Slightly modified version of: https://github.com/fay-jai/Typescript-ReactJS-Webpack/tree/add-testing
+# Birdie-Code-Challenge
+This project is a code challenge for birdie.

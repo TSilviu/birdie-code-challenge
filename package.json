@@ -1,7 +1,7 @@
 {
-  "name": "simple-react-typescript-webpack",
+  "name": "birdie-code-challenge",
   "version": "1.0.0",
-  "description": "This is a simple starting pack with react, typescript and webpack",
+  "description": "This is a code challenge for birdie",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
