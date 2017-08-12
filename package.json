@@ -1,0 +1,22 @@
+{
+  "name": "simple-react-typescript-webpack",
+  "version": "1.0.0",
+  "description": "This is a simple starting pack with react, typescript and webpack",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Silviu Tugulan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.0.2",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.4"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
