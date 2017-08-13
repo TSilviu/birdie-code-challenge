@@ -1,8 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Hello from "./Hello";
+
+import { LayoutComponent } from "./LayoutComponent";
 
 ReactDOM.render(
-  <Hello name="Silviu" />,
+  <LayoutComponent />,
   document.getElementById("root")
 );
