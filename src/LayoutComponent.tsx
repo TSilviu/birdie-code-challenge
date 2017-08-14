@@ -1,10 +1,13 @@
 import * as React from "react";
 
 import { SelectorComponent } from './SelectorComponent';
+import { TableComponent } from './TableComponent';
+
+import { IDataElement } from '../server';
 
 interface IState {
   columns: string[];
-  values: any[];
+  values: IDataElement[];
 }
 
 export class LayoutComponent extends React.Component<{}, IState> {
@@ -17,7 +20,7 @@ export class LayoutComponent extends React.Component<{}, IState> {
   }
 
   private getDataForValue(value: string): void {
-    fetch('/values')
+    fetch('/values/name=' + value)
       .then( (response) => response.json() )
       .then( (values) => this.setState({ values }));
   }
@@ -32,6 +35,7 @@ export class LayoutComponent extends React.Component<{}, IState> {
     return (
       <div>
         <SelectorComponent columns={this.state.columns} getDataForValue={this.getDataForValue.bind(this)}/>
+        <TableComponent data={this.state.values}/>
       </div>
     );
   }
